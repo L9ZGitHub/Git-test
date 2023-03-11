@@ -9,5 +9,7 @@ public class Hello {
         System.out.println("20230311-4 commit");
         System.out.println("20230311-5 master commit");
         System.out.println("20230311-5 hot-fix-1 commit");
+        System.out.println("20230311-5 hot-fix-2 commit");
+
     }
 }
