@@ -2,7 +2,7 @@
 ## 团队成员
 - l9z9897
 - l9zyr95
-## 项目主要目的
+## 主要目的
 - 练习git的使用
 - 练习idea中git的使用
 - 练习git提交本地库
@@ -43,32 +43,44 @@
 | `git pull 远程库别名 分支`           | 拉去远程库的相关分支<br>与当前本地分支直接合并 |
 | `git clone 远程地址`                 | 将远程仓库的内容克隆到本地                     |
 
-- 合并冲突
+- 合并冲突（比较重要，具体情况具体分析）
 
 - SSH免密登录
 
-  - 进入当前用户的家目录`C:\Users\L9ZYR`
+  - 进入当前用户的家目录  `C:\Users\{user}`
 
-  - `ssh-keygen -t ras -C 描述信息` 生成私钥公钥
+    - `ssh-keygen -t ras -C 描述信息`      (生成私钥公钥)
 
-  - 进入`.ssh`文件 `cd .ssh`
+    - `cd .ssh`      (进入`.ssh`文件)
 
-  - 查看公钥 `cat id_rsa.pub`
+    - `cat id_rsa.pub`     (查看公钥)
 
-  - 将公钥复制到github的指定位置即可。
+  - 将公钥复制到github的指定位置即可
 
-    ```
-    settings -> SSH and GPG keys -> new SSH key -> 随便起个名字，将公钥复制上去
-    ```
+    > - 登录GitHub 点击头像选择 Settings
+    >
+    > - 选择 SSH and GPG keys
+    >
+    > - new SSH key
+    >
+    > - 随便起个名字，将公钥复制上去
+    >
+    > - 这样就可以了！可以使用SSH地址访问远程库了。
+    
+    
 
 ## IDEA中的git
 
-- settings中定位git程序
-- 初始化本地库  在`VCS`选项中
-- 其他的操作就省略了......，很简单
+- 进入IDEA
+- 在Settings中，选择Version Control，选择Git，定位git程序
+- 在`VCS`选项中，初始化本地库
+- 然后就是添加暂存区，提交本地库，push远程库
+- 其他的操作IDEA中都有相应的按钮选项
 
 ## IDEA中设置github账号
 
-- settings
-- Version Control 
-- GitHub
+- 进入IDEA
+- 找到Settings
+- 选择Version Control 
+- 选择GitHub
+- 绑定GitHub账号
