@@ -96,8 +96,51 @@
 > <span style="color:blue; font-weight:bold">在配置IDEA环境前，我们也可以设置一下要忽略的文件：</span>
 >
 > - 在用户家目录下，创建忽略规则文件，`xxx.ignore` (建议：git.ignore)
+>
+> ```shell
+> # Compiled class file
+> *.class
+> 
+> # Log file
+> *.log
+> 
+> # BlueJ files
+> *.ctxt
+> 
+> # Mobile Tools for Java (J2ME)
+> .mtj.tmp/
+> 
+> # Package Files #
+> *.jar
+> *.war
+> *.nar
+> *.ear
+> *.zip
+> *.tar.gz
+> *.rar
+> 
+> # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+> hs_err_pid*
+> 
+> .classpath
+> .project
+> .settings
+> target
+> .idea
+> *.iml
+> ```
+>
 > - (这里要说明的是：文件名可以随便取，只要保证扩展名是`ignore`；文件也可以随便放，一般建议放在用户家目录下)
 > - 在`.gitconfig`文件中引用`git.ignore`文件
+>
+> ```shell
+> [user]
+> 	name = l9zyr
+> 	email = l9zyr95@163.com
+> [core]
+> 	excludesfile = C:/Users/L9ZYR/git.ignore
+> ```
+>
 > - 这样就好了，接下来就根据上面的步骤在IDEA中定位`git.exe`程序吧
 
 ## IDEA中设置github账号
