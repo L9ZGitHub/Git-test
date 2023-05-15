@@ -17,7 +17,9 @@
 | `git init` | 初始化本地库 |
 | `git status` | 查看本地库状态 |
 | `git add 文件名` | 添加暂存区 |
+| `git add -A` | 将全部修改的文件提交暂存区 |
 | `git commit -m '提交描述' 文件名` | 提交到本地库 |
+| `git commit -m '提交描述'` | 提交所有暂存区的文件到本地库 |
 | `git reflog` | 查看历史记录 |
 | `git log` | 查看版本详细信息 |
 | `git reset --hard 版本号` | 版本穿梭 |
@@ -55,16 +57,16 @@
 
   - 进入当前用户的家目录  `C:\Users\{user}`
 
-    - `ssh-keygen -t ras -C 描述信息`      (生成私钥公钥)
+    - `ssh-keygen -t rsa -C 描述信息`      (生成私钥公钥)
 
     ```shell
-    # 邮箱充当描述信息
-    ssh-keygen -t ras -C l9z9897@163.com
+    # 一般用邮箱充当描述信息
+    ssh-keygen -t rsa -C l9z9897@163.com
     ```
   
     - `cd .ssh`      (进入`.ssh`文件)
   
-    - `cat id_rsa.pub`     (查看公钥)
+    - `cat id_rsa.pub`       (查看公钥)
   
   - 将公钥复制到github的指定位置即可
   
